@@ -38,4 +38,13 @@ function myFunction(item, index){
     box.style.filter = `blur(${.1 * wh}px) saturate(125%)`
 }
 }
+let typing = document.querySelector(".typing");
+setTimeout(()=>{typing.innerHTML = "Diwali"}, 3000);
+changeMessage = () =>{
+
+    typing.innerHTML = "Tihar!";
+    setTimeout(()=>{typing.innerHTML = "Diwali"}, 3000);
+    
+}
+setInterval(changeMessage, 6000)
 setInterval(start, 1500);

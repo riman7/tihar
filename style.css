@@ -29,7 +29,7 @@ body{
     transition: all .7s;
 }
 .message{
-    position: absolute;
+    position: fixed;
     top: 50%;       left: 50%;
     transform: translate(-50%, -50%);
     padding: 0 2% .5% 2%;
@@ -40,9 +40,14 @@ body{
     text-shadow: 0 0 7px yellowgreen;
     background-color: hsla(0, 100%, 50%, 0.9);
     z-index: 10;
-    font-size: min(9vh, 9vw);
+    font-size: min(7vh, 7vw);
     font-family: 'Concert One', cursive;
+    min-height: fit-content;
 }
+.message h1{
+    font-size: min(7vh, 7vw);
+}
+
 .name{
     position: absolute;
     bottom: 7%;
@@ -51,6 +56,9 @@ body{
     background-color: aliceblue;
     font-family: cursive;
     border: solid black 1px;
+}
+.name h1{
+    font-size: 1rem;
 }
 .container{
     width: min(100vh, 100vw);
